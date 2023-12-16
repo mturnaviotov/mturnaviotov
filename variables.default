@@ -1,0 +1,22 @@
+# 0. copy this tile to variables.tf
+# 1. fill it with your own values
+# 2. Uncomment all lines below "#=== UNCOMMENT START"
+# 3. run 
+# ```
+# terraform init && terraform plan
+# ```
+# 4. if all seems okay
+# ```
+# run terraform apply
+# ```
+# === UNCOMMENT START
+variable "auth" {
+    type = string
+    sensitive = true
+    default = "insert here token from your account token page https://github.com/settings/tokens"
+}
+
+variable "owner" {
+    type = string
+    default = "insert here your github account username"
+}
